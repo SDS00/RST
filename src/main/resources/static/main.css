@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a, button, input {
+    cursor: pointer;
+}
+
+button, input {
+    border: 1px solid black;
+    padding: 8px 16px;
+
+    border-radius: 4px;
+    background: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid black;
+
+    height: 64px;
+
+    background-color: rgb(180, 50, 50);
+    color: white;
+}
+
+header nav {
+    display: flex;
+
+    margin: 0 16px;
+}
+
+header button {
+    border-color: white;
+    color: white;
+}
+
+nav a {
+    margin: 0 16px;
+
+    color: white;
+    text-decoration: none;
+}
+
+header .header-info {
+    margin: 0 16px;
+}
+
+.container {
+    margin: 0 auto;
+
+    width: 80%;
+    max-width: 1000px;
+}
+
+.entity-card {
+    margin: 16px 0;
+    border: 1px solid black;
+    padding: 16px;
+
+    border-radius: 8px;
+}
+
+.entity-card .card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.crud-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.crud-form.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.crud-form input, .crud-form select, .crud-form button {
+    margin: 16px;
+    border-color: white;
+    color: white;
+    background: none;
+}
